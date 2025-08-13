@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./framwork.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <h1>Welcome In My APP</h1>
+        <h3>Mostafa Elsayd</h3>
+    </div>
+    <div class="container">
+        <div class="form">
+            <input type="text" class="first" placeholder="title" >
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" placeholder="Price" class="price-felad" >
+                <input onkeyup="getTotal()" type="number" placeholder="taxes" class="taxes" >
+                <input onkeyup="getTotal()" type="number" placeholder="ads" class="ads">
+                <input onkeyup="getTotal()" type="number" placeholder="discount" class="discount">
+                <!-- <input  type="text" placeholder="total :" class="total"> -->
+                 <small id="total"> </small>
+            </div>
+            <input type="text" placeholder="count (1, 2, 3...)" class="count">
+            <input type="text" placeholder="category" class="category">
+            <button class="create">Create</button>
+            <input type="search" placeholder="search" class="search-felad">
+            <div class="search">
+                <button class="search-title">Search By Title</button>
+                <button class="search-category">Search By Category</button>
+            </div>
+            <button class="delete-all d-none" >Delete All</button>
+            <div class="footer">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>TITLE</td>
+                            <td>PRICE</td>
+                            <td>Taxes</td>
+                            <td>ADS</td>
+                            <td>DISCOUNT</td>
+                            <td>TOTAL</td>
+                            <td>CATERING</td>
+                            <td>UPDATE</td>
+                            <td>DELETE</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>title</td>
+                            <td>price</td>
+                            <td>taxes</td>
+                            <td>ads</td>
+                            <td>discount</td>
+                            <td>total</td>
+                            <td>category</td>
+                            <td><button class="update">Update</button></td>
+                            <td><button class="delete">Delete</button></td>
+                        </tr> -->
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+<script src="./text.js"></script>
+</body>
+</html>
